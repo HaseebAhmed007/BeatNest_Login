@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatNest - Web Player: Music for everyone</title>
+    <link rel="icon" href="music.png" >
+    <link rel="shortcut icon">
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Utility.css">
+
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="close">
+                <img width="20px" class="invert" src="close.svg" alt="">
+            </div>
+            <div class="home rounded m-1 bg-gray p-1 ">
+                <div class="logo"> <img width="80" src="icon.png" alt="">BeatNest</div>
+                
+            </div>
+            <div class="library rounded m-1 bg-gray p-1  ">
+                <div class="heading">
+                    <img class="invert" src="playlist.svg" alt="">
+                    <h2>
+                        Your Library
+                    </h2>
+
+
+                </div>
+                <div class="songlist">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="right rounded bg-gray p-1">
+            <div class="header">
+                
+                <div class="buttons">
+                    
+                    <button onclick="goToLogin()" class="loginbtn">Log in</button>
+                    
+                </div>
+            </div>
+            <div class="BeatNestPlaylist">
+                <h1>
+                    BeatNest Playlists
+                </h1>
+                <div class="cardcontainer">
+                </div>
+                
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function goToLogin() {
+       window.location.href = "login.html";
+    }
+    
+    </script>
+    
+
+</body>
+
+</html>
+
+
