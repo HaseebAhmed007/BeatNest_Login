@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Login-BeatNest</title>
+    <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+    <div class="card">
+
+        <div class="icon">
+            <div> <img width="80" src="icon.png" alt=""></div>
+            <div class="text">
+                <H2>Log in to BeatNest</H2>
+            </div>
+        </div>
+        <div class="button-container">
+            <a href="#" class="social-button ">
+                <i class="fab fa-google"></i> <img height="30" src="google.svg" alt="">
+                <span>Continue with Google</span>
+            </a>
+
+            <a href="#" class="social-button ">
+                <i class="fab fa-facebook-f"></i> <img height="30" src="facebook.svg" alt="">
+                <span>Continue with Facebook</span>
+            </a>
+
+            <a href="#" class="social-button apple">
+                <i class="fab fa-apple"></i> <img height="30" src="apple.svg" alt="">
+                <span>Continue with Apple</span>
+            </a>
+        </div>
+
+        <div class="separator">
+            <hr> <span></span>
+            <hr>
+        </div>
+
+
+        <form onsubmit="return handleLogin()">
+            <div class="input-group">
+                <label for="username-email"></label>
+                <input type="text" id="username-email" placeholder="Email or username" required /><br />
+                <label for="Password"></label>
+                <input type="password" id="password" placeholder="Password" required /><br />
+                <button class="continue-button">Continue</button>
+            </div>
+        </form>
+        <div class="signup-prompt">
+        <span>Don't have an account?</span>
+        <a href="#" class="signup-link">Sign up for BeatNest</a> </div>
+
+        <script>
+            function handleLogin() {
+                const user = document.getElementById('username-email').value;
+                const pass = document.getElementById('password').value;
+
+                // Demo ke liye static check
+                if (user === "Haseeb" && pass === "1234") {
+                    alert("Login Successful!");
+                    // Redirect tohome page
+                    window.location.href = "Index.html";
+                } else {
+                    alert("Invalid Credentials");
+                }
+                return false; // form submit na ho
+            }
+        </script>
+        <script src="script.js"></script>
+</body>
+
+</html>

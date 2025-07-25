@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    justify-content: center;
+    margin: 0;
+}
+
+input {
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+}
+
+.card {
+    background-color: rgb(12, 12, 12);
+    border: 2px solid white;
+    width: 50vw;
+    margin: 40px auto;
+    height: 50vw;
+    border-radius: 10px;
+    padding: 36px;
+    padding-top: 12px;
+    border: none;
+
+
+}
+
+.icon {
+    margin-top: 5px;
+}
+
+.text {
+    margin-top: -31px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: fit-content;
+    margin: 0 auto;
+
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 12px 20px;
+    border: 1px solid #8941a3;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 1em;
+    text-decoration: none;
+    width: 330px;
+
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    gap: 41px;
+}
+
+.social-button:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.social-button.apple .fab.fa-apple {
+    color: #691212;
+    /* Apple white */
+}
+
+.separator {
+    margin: 50px;
+    opacity: 0.3;
+}
+
+.separator hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 0 10px;
+}
+
+.input-group {
+    justify-content: center;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    margin: -15px auto;
+    width: 341px;
+    box-sizing: border-box;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ffffff;
+    font-size: 15px;
+    width: 354px;
+    margin: auto;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-size: 1em;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.input-group input[type="text"]::placeholder,
+.input-group input[type="password"]::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.input-group input[type="text"]:focus,
+.input-group input[type="password"]:focus {
+    border-color: #9b59b6;
+}
+
+
+.continue-button {
+    background-color: #9b59b6;
+    color: #000000;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    width: 320px;
+
+    transition: background-color 0.2s ease;
+    margin: 0 20px;
+}
+
+.continue-button:hover {
+    background-color: #8941a3;
+}
+.continue-button:active {
+    background-color: #9b59b6;
+    
+}
+
+.signup-prompt {
+    margin-top: 53px; 
+    color: #a7a7a7; 
+    font-size: 14px; 
+    text-align: center; 
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+
+
+.signup-link:hover {
+    color: #9b59b6
+}
